@@ -53,7 +53,6 @@ aside {
 /* Styling for footer */
 footer {
     position: fixed;
-    left: 0;
     bottom: 0;
     width: 100%;
     border-style: double;
@@ -66,12 +65,28 @@ footer {
 
 /* Classes*/
 
+.roundCorners {
+    border-radius: 25px;
+    border: 1px solid black;
+}
+
 /* Styling for introduction on a page */
 .intro {
     font-weight: bold;
     text-align: center;
     font-size: 18px;
     line-height: 25px;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex:50%;
+    padding: 10px;
+    border: 2px dotted black;
+    
 }
 
 /* Position element to the left */
@@ -85,7 +100,7 @@ footer {
     position: right;
 }
 
-/* Image position */
+/* Image positions */
 .img {
     width: 100%;
 }
@@ -107,6 +122,14 @@ footer {
     float: right;
 }
 
+.floatRightImg {
+    float: right;
+    width: 50%;
+    border: 1px solid black;
+    margin-left: 5px;
+    border-radius: 25px;
+}
+
 /* styling for interactive navigation bar*/
 #main-nav {
     ul {
@@ -123,6 +146,7 @@ footer {
     ul li {
         float: left;
         border-right: 1px solid #bbbbbb;
+        background-color: #333333;
     }
 
     ul li a {
@@ -131,6 +155,7 @@ footer {
         text-align: center;
         padding: 14px 30px;
         text-decoration: none;
+        background-color: #333333;
     }
 
     ul li a:hover {
@@ -147,5 +172,6 @@ footer {
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
