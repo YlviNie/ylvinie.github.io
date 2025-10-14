@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Hardlopen in Alkmaar</title>
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <link rel="icon" type="image/x-icon" href="img/favicon.png" />
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html" class="logo" title="Logo"></a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="page1.html">Page 1</a></li>
+        <li><a href="page2.html">Page 2</a></li>
+        <li><a href="page3.html">Page 3</a></li>
+        <li><a href="page4.html">Page 4</a></li>
+        <li><a href="contact.html" , class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="full-width">
+      <h2>Contact Us</h2>
+      <p>Please fill out the form below. Required fields are marked with *.</p>
+
+      <form novalidate>
+        <fieldset>
+          <label for="name">Name *</label>
+          <input type="text" id="name" name="name" required>
+          <span class="error-message">Please enter your name.</span>
+
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required>
+          <span class="error-message">Please enter a valid email address.</span>
+
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <span class="error-message">Please enter your message.</span>
+
+          <button type="submit">Send Message</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Website. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
