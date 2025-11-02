@@ -202,6 +202,10 @@ tr.faq:nth-child(even) th {
   margin: 0px 0px 50px;
 }
 
+.pageTwoMargin {
+  margin: 0px 15px;
+}
+
 /* Image styling */
 img {
   border-radius: 25px;
@@ -341,7 +345,7 @@ nav {
 }
 
 .logo {
-  width: 70px; /* fixed width instead of percentage */
+  width: 70px;
   max-width: 40vw;
 }
 
@@ -381,7 +385,24 @@ footer {
   background-color: #fff;
   margin: 10px;
   border-radius: 15px;
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footerNavigation {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footerLogos {
+  width: 40px;
+  border-radius: 0px;
 }
 
 /* Form */
@@ -525,6 +546,10 @@ nav > ul > li > a {
   .pageNavButtons {
     flex-direction: column;
     gap: 0px;
+  }
+
+  .pageTwoMargin {
+    margin: 0px;
   }
 
   form {
